@@ -13,6 +13,7 @@
 		3A0A864925E380E400EB812A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A864725E380E400EB812A /* Main.storyboard */; };
 		3A0A864B25E380EB00EB812A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A864A25E380EB00EB812A /* Assets.xcassets */; };
 		3A0A864E25E380EB00EB812A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A864C25E380EB00EB812A /* LaunchScreen.storyboard */; };
+		3A0A865825E3867C00EB812A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0A865725E3867C00EB812A /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3A0A864A25E380EB00EB812A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A0A864D25E380EB00EB812A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A0A864F25E380EB00EB812A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0A865725E3867C00EB812A /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				3A0A864125E380E400EB812A /* AppDelegate.swift */,
 				3A0A864325E380E400EB812A /* SceneDelegate.swift */,
+				3A0A865725E3867C00EB812A /* Common.swift */,
 				3A0A864525E380E400EB812A /* ViewController.swift */,
 				3A0A864725E380E400EB812A /* Main.storyboard */,
 				3A0A864A25E380EB00EB812A /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0A865825E3867C00EB812A /* Common.swift in Sources */,
 				3A0A864625E380E400EB812A /* ViewController.swift in Sources */,
 				3A0A864225E380E400EB812A /* AppDelegate.swift in Sources */,
 				3A0A864425E380E400EB812A /* SceneDelegate.swift in Sources */,
