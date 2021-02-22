@@ -191,6 +191,9 @@
                             <constraint firstItem="Bw9-fl-v6h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wNC-LI-nI4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="listTableView" destination="qB9-Rg-Ica" id="vI9-li-HZA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
