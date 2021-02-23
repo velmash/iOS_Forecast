@@ -21,7 +21,19 @@ class LocationManager: NSObject {
     
     let manager: CLLocationManager
     
-    var currentLocationTitle: String?
+    var currentLocationTitle: String? {
+        didSet {
+            var userInfo = [AnyHashable: Any] ()
+            if let location = currentLocation {
+                userInfo["location"] = location
+            }
+            
+            NotificationCenter.default.post(name: Self.currentLocationDidUpdate, object: nil, userInfo: userInfo)
+        }
+    }
+    var currentLocation: CLLocation?
+    
+    static let currentLocationDidUpdate = Notification.Name(rawValue: "currentLocationDidUpdate")
     
     func updateLocation() {
         let status: CLAuthorizationStatus
@@ -101,6 +113,7 @@ extension LocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
+            currentLocation = location
             updateAddress(from: location)
         }
     }
